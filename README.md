@@ -205,3 +205,112 @@ Also:
 - Admin analytics dashboard (bookings, revenue)
 - Caching (Redis optional)
 - Load handling (multiple users booking same show)
+I have a Movie Ticket Booking System project based on Java & MySQL.
+
+Refer to the system:
+
+- Users: Admin, Manager, User
+- Features:
+  - Registration/Login
+  - Theater & Movie management
+  - Seat selection & booking
+  - Payment & confirmation
+  - Subscription system
+
+(Reference: UML diagrams, activity diagram, and pages 0)
+
+---
+
+### 🔁 SYSTEM FLOW (IMPORTANT)
+
+Generate the full flow step-by-step:
+
+1. User visits website
+2. User registers or logs in
+3. System validates credentials
+4. Based on role:
+   - Admin → Manage managers
+   - Manager → Add theater, screens, timings, movies
+   - User → Browse movies
+
+5. User Flow:
+   - Select movie
+   - Select theater & show
+   - View available seats
+   - Select seats
+   - Proceed to payment
+   - Booking confirmed
+   - Email sent
+
+6. Manager Flow:
+   - Login
+   - Add theater
+   - Add screen timings
+   - Add seats
+   - Add movies
+
+7. Admin Flow:
+   - Login
+   - Add/remove managers
+   - Monitor system
+
+8. Logout
+
+---
+
+### 🧠 ARCHITECTURE FLOW
+
+Explain request flow:
+
+User → Frontend → Controller → Service → DAO → Database  
+Database → DAO → Service → Controller → Frontend
+
+---
+
+### 🎯 FRONTEND
+- HTML/CSS/JS (or React)
+- Pages:
+  - Login/Register
+  - Home
+  - Movie Selection
+  - Seat Selection
+  - Booking Confirmation
+  - Admin/Manager Dashboard
+
+---
+
+### ⚙️ BACKEND
+- Java (Spring Boot, no JPA)
+- Layers:
+  - Controller
+  - Service
+  - DAO (JDBC)
+
+---
+
+### 🗄️ DATABASE
+Tables:
+- Users
+- Managers
+- Movies
+- Theaters
+- Screens
+- Seats
+- Bookings
+
+---
+
+### 📦 OUTPUT
+- Folder structure (frontend + backend)
+- APIs
+- Sample code
+- SQL schema
+
+---
+
+### 🚀 EXTRA
+- Seat locking logic
+- JWT auth
+- Email service
+
+Generate everything clearly.
